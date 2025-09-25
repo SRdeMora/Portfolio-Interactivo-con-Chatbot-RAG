@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+openai
+python-dotenv
+langchain
+langchain-community
+chromadb
+sentence-transformers
+tiktoken

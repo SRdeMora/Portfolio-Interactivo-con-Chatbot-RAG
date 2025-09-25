@@ -1,0 +1,188 @@
+/* CSS Variables for easy theming */
+:root {
+    --background-color: #0D0208;
+    --text-color: #00FF41;
+    --glow-color: rgba(0, 255, 65, 0.75);
+    --highlight-color: #FFD700;
+    --error-color: #FF0000;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    line-height: 1.5;
+    text-shadow: 0 0 5px var(--glow-color);
+    overflow: hidden; /* Hide scrollbars from the body */
+}
+
+/* Animated Grid Background */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image:
+        linear-gradient(to right, rgba(0, 255, 65, 0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 255, 65, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    animation: moveGrid 10s linear infinite;
+    z-index: -1;
+}
+
+@keyframes moveGrid {
+    from { background-position: 0 0; }
+    to { background-position: 40px 40px; }
+}
+
+#terminal {
+    padding: 20px;
+    height: calc(100vh - 120px); /* Adjust height for new margin */
+    width: calc(100vw - 120px); /* Adjust width for new margin */
+    margin: 60px;
+    box-sizing: border-box;
+    cursor: default;
+    overflow: hidden; /* Output will scroll, not the whole terminal */
+    border: 2px solid var(--text-color);
+    box-shadow: 0 0 20px var(--glow-color);
+    position: relative;
+    background-color: rgba(13, 2, 8, 0.85);
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--text-color);
+}
+
+#header h1 {
+    font-size: 24px;
+    margin: 0 0 5px 0;
+    color: var(--highlight-color);
+    text-shadow: 0 0 7px var(--highlight-color);
+}
+
+#header p {
+    font-size: 14px;
+    margin: 0;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    flex-shrink: 0;
+    margin-bottom: 15px;
+}
+
+#navbar span {
+    cursor: pointer;
+}
+
+#navbar span:hover {
+    color: var(--highlight-color);
+    text-shadow: 0 0 5px var(--highlight-color);
+}
+
+#output {
+    white-space: pre-wrap;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+/* Custom scrollbar for the output */
+#output::-webkit-scrollbar {
+    width: 10px;
+}
+#output::-webkit-scrollbar-track {
+    background: transparent;
+}
+#output::-webkit-scrollbar-thumb {
+    background-color: var(--text-color);
+    border-radius: 5px;
+    border: 2px solid var(--background-color);
+}
+
+.prompt-line {
+    display: none; /* Hidden by default */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.prompt {
+    margin-right: 10px;
+}
+
+#input {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+    text-shadow: 0 0 5px var(--glow-color);
+}
+
+.prompt-line::after {
+    content: '_';
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.command-output {
+    margin-bottom: 10px;
+}
+
+.error {
+    color: var(--error-color);
+    text-shadow: 0 0 5px var(--error-color);
+}
+
+.highlight {
+    color: var(--highlight-color);
+    text-shadow: 0 0 5px var(--highlight-color);
+}
+
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#terminal::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3) 1px,
+        transparent 1px,
+        transparent 3px
+    );
+    pointer-events: none;
+    z-index: 1; /* Make sure it's above the background but below content */
+}
