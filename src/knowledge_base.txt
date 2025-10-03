@@ -1,0 +1,58 @@
+# SAMUEL RODRÍGUEZ DE MORA
+
+**ESPECIALISTA EN PROCESAMIENTO DEL LENGUAJE NATURAL**
+
+---
+
+MADRID | devai.srm@gmail.com | 629 308 432 | [Portfolio](URL_DE_TU_LANDING_PAGE) | [LinkedIn](URL_DE_TU_LINKEDIN) | [GitHub](URL_DE_TU_GITHUB)
+
+---
+
+Lingüista Computacional con base en Filología Hispánica, experto en PLN, Machine Learning y modelos Transformer (BERT, GPT). Mi experiencia abarca la ingeniería de prompts, el desarrollo de agentes conversacionales y la creación de automatizaciones con herramientas no-code.
+
+---
+
+### COMPETENCIAS CLAVE
+
+- **Procesamiento del Lenguaje Natural (PLN)**
+- **Lingüística Computacional**
+- **IA Conversacional**
+- **Prompt Engineering**
+- **Modelos Transformer**
+- **Extracción de Información (NER)**
+- **Clasificación de Textos y Análisis de Sentimiento**
+
+---
+
+### EXPERIENCIA LABORAL
+
+**Gerente A** | Mercadona S.A | 2010 - 2024
+
+-   **Análisis de Datos y Experiencia Cliente:** Utilicé KPIs para la toma de decisiones estratégicas y lideré la resolución de incidencias críticas mediante el análisis de su causa raíz, garantizando la satisfacción del cliente y la mejora continua.
+-   **Optimización Logística y de Rutas:** Diseñé y optimicé las rutas de reparto de pedidos. Mediante el análisis de datos de volumen y capacidad de pedidos en Excel, modelé y determiné los trayectos más eficientes para maximizar la productividad de la flota y garantizar la puntualidad.
+-   **Gestión de Proyectos:** Lideré la implementación de nuevas iniciativas comerciales y operativas, coordinando recursos y personal para asegurar una ejecución exitosa en tiempo y forma.
+
+**Técnico de Mantenimiento de TPVs** | POAS Mantenimiento | 2006 - 2008
+
+-   **Diagnóstico Avanzado y Recuperación de Equipos:** Realicé el diagnóstico sistemático de incidencias de hardware y software, especializándome en la recuperación de equipos declarados 'irrecuperables'. Apliqué un análisis de causa raíz a nivel de componente para restaurar la operatividad crítica y garantizar la continuidad del negocio del cliente.
+-   **Formación y Mentoría Técnica:** Como referente técnico del equipo, asumí la responsabilidad de la formación de nuevas incorporaciones. Me dediqué a traducir conceptos complejos de electrónica a procedimientos prácticos y comprensibles, acelerando su curva de aprendizaje y su autonomía para asegurar la máxima calidad en el servicio.
+
+---
+
+### FORMACIÓN
+
+**Diplomado en Experto en Procesamiento del Lenguaje Natural** | 2024 - 2025  
+*Universidad a Distancia de Madrid (UDIMA)*
+
+**Graduado en Lengua y Literatura Españolas** | 2018 - 2023  
+*Universidad Nacional de Educación a Distancia*
+
+---
+
+### HABILIDADES TÉCNICAS Y COMPETENCIAS
+
+-   **Áreas de PLN / Machine Learning:** Análisis de Sentimiento, Clasificación de Textos, Named Entity Recognition (NER), Topic Modeling (LDA), Word Embeddings (Word2Vec, GloVe), Modelos Transformer (BERT, GPT), Chatbots y Asistentes Virtuales, Traducción Automática, Web Scraping.
+-   **Lenguajes de Programación:** Python.
+-   **Bibliotecas y Frameworks de PLN/ML:** NLTK, spaCy, Scikit-learn, Gensim, TensorFlow, Keras, Hugging Face Transformers.
+-   **Herramientas y Tecnologías:** Jupyter Notebooks, Git, SQL (básico), APIs REST, n8n.
+-   **Competencias Interpersonales:** Liderazgo de Equipos, Gestión de Proyectos, Optimización de Procesos, Resolución de Problemas, Habilidades de Comunicación.
