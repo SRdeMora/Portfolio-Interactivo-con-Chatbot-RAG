@@ -127,7 +127,7 @@ async function handleChatMessage(message) {
     output.scrollTop = output.scrollHeight;
 
     try {
-        const response = await fetch('http://localhost:8000/chat', {
+        const response = await fetch('https://api.srmdevai.com/chat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ question: message }),
