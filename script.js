@@ -28,10 +28,10 @@ Lingüista Computacional con base en Filología Hispánica, experto en PLN, Mach
 <div class="section-title">--- PROYECTOS DESTACADOS ---</div>
 
 <div class="project-item">
-  <span class="highlight">Análisis de Sentimiento para Reseñas de Productos</span>
-  <div><span class="highlight">Descripción:</span> Una API que clasifica el texto de reseñas en positivo, negativo o neutro usando un modelo Transformer afinado.</div>
-  <div><span class="highlight">Tecnologías:</span> Python, FastAPI, Hugging Face Transformers, Scikit-learn.</div>
-  <div><span class="highlight">Enlace:</span> <a href="https://github.com/samuel-rdm/sentiment-analyzer" target="_blank">github.com/samuel-rdm/sentiment-analyzer</a></div>
+  <span class="highlight">chimera-conversational-ai</span>
+  <div><span class="highlight">Descripción:</span> El Proyecto Quimera es un asistente de IA diseñado para funcionar como un "exo-córtex": un cerebro externo que aumenta las capacidades del usuario ("Arkitekto"). A diferencia de los chatbots simples, Quimera está diseñado para comprender el contexto profundo (tono, emoción, intención) y utilizar un sistema de memoria complejo para mantener conversaciones coherentes, personalizadas y extensibles a largo plazo.</div>
+  <div><span class="highlight">Tecnologías:</span>Python, FastAPI, PySide6, Redis, ChromaDB, Neo4j, OpenAI, Google Gemini.</div>
+  <div><span class="highlight">Enlace:</span> <a href="https://github.com/SRdeMora/chimera-conversational-ai" target="_blank">github.com/samuel-rdm/sentiment-analyzer</a></div>
 </div>
 
 <div class="project-item">
