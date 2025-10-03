@@ -9,18 +9,19 @@ const sections = {
     'about': `
 <div class="section-title">--- BIOGRAFÍA ---</div>
 
-Lingüista Computacional con base en Filología Hispánica, experto en PLN, Machine Learning y modelos Transformer (BERT, GPT). Mi experiencia abarca la ingeniería de prompts, el desarrollo de agentes conversacionales y la creación de automatizaciones con herramientas no-code.
+Lingüista Computacional y Especialista en PLN, con una sólida base académica en Filología Hispánica. Mi enfoque profesional se sitúa en la intersección del lenguaje humano y la inteligencia artificial, donde transformo texto no estructurado en soluciones de negocio inteligentes.
+Soy experto en el ciclo de vida completo de proyectos de IA conversacional: desde el diseño de prompts y la ingeniería de contexto, hasta el desarrollo y fine-tuning de modelos Transformer (BERT, GPT) y la creación de agentes autónomos. Mi objetivo es construir sistemas que no solo entiendan el lenguaje, sino que también comprendan la intención y el contexto.
 `,
     'skills': `
 <div class="section-title">--- HABILIDADES TÉCNICAS ---</div>
 
-<div class="skill-category"><span class="highlight">Áreas de PLN / Machine Learning:</span> Análisis de Sentimiento, Clasificación de Textos, Named Entity Recognition (NER), Topic Modeling (LDA), Word Embeddings (Word2Vec, GloVe), Modelos Transformer (BERT, GPT), Chatbots y Asistentes Virtuales, Traducción Automática, Web Scraping.</div>
+<div class="skill-category"><span class="highlight">Áreas de PLN / Machine Learning:</span> Análisis de Sentimiento, Clasificación de Textos, Named Entity Recognition (NER), Retrieval-Augmented Generation (RAG), Ingeniería de Prompts, Sistemas Agenticos, Modelos Transformer (BERT, GPT), Búsqueda Semántica.</div>
 
-<div class="skill-category"><span class="highlight">Lenguajes de Programación:</span> Python.</div>
+<div class="skill-category"><span class="highlight">Lenguajes de Programación:</span> Python, SQL .</div>
 
-<div class="skill-category"><span class="highlight">Bibliotecas y Frameworks de PLN/ML:</span> NLTK, spaCy, Scikit-learn, Gensim, TensorFlow, Keras, Hugging Face Transformers.</div>
+<div class="skill-category"><span class="highlight">Bibliotecas y Frameworks de PLN/ML:</span> NLTK, spaCy, Scikit-learn, Gensim, TensorFlow, Keras, Hugging Face Transformers, LangChain.</div>
 
-<div class="skill-category"><span class="highlight">Herramientas y Tecnologías:</span> Jupyter Notebooks, Git, SQL (básico), APIs REST, n8n.</div>
+<div class="skill-category"><span class="highlight">Herramientas y Tecnologías:</span> Jupyter Notebooks, Git, APIs REST, n8n.</div>
 
 <div class="skill-category"><span class="highlight">Competencias Interpersonales:</span> Liderazgo de Equipos, Gestión de Proyectos, Optimización de Procesos, Resolución de Problemas, Habilidades de Comunicación.</div>
 `,
@@ -28,24 +29,24 @@ Lingüista Computacional con base en Filología Hispánica, experto en PLN, Mach
 <div class="section-title">--- PROYECTOS DESTACADOS ---</div>
 
 <div class="project-item">
-  <span class="highlight">chimera-conversational-ai</span>
+  <span class="highlight">Chimera-Conversational-AI</span>
   <div><span class="highlight">Descripción:</span> El Proyecto Quimera es un asistente de IA diseñado para funcionar como un "exo-córtex": un cerebro externo que aumenta las capacidades del usuario ("Arkitekto"). A diferencia de los chatbots simples, Quimera está diseñado para comprender el contexto profundo (tono, emoción, intención) y utilizar un sistema de memoria complejo para mantener conversaciones coherentes, personalizadas y extensibles a largo plazo.</div>
-  <div><span class="highlight">Tecnologías:</span>Python, FastAPI, PySide6, Redis, ChromaDB, Neo4j, OpenAI, Google Gemini.</div>
-  <div><span class="highlight">Enlace:</span> <a href="https://github.com/SRdeMora/chimera-conversational-ai" target="_blank">github.com/samuel-rdm/sentiment-analyzer</a></div>
+  <div><span class="highlight">Tecnologías:</span>Python, FastAPI, PySide6, Redis, SQLite, ChromaDB, Neo4j, OpenAI, Google Gemini.</div>
+  <div><span class="highlight">Enlace:</span> <a href="https://github.com/SRdeMora/chimera-conversational-ai" target="_blank">github.com/SRdeMora/chimera-conversational-ai</a></div>
 </div>
 
 <div class="project-item">
-  <span class="highlight">Asistente de Documentación Técnica (Chatbot RAG)</span>
-  <div><span class="highlight">Descripción:</span> Un chatbot que responde preguntas sobre una base de código compleja. Utiliza RAG para extraer contexto de la documentación y generar respuestas precisas.</div>
-  <div><span class="highlight">Tecnologías:</span> LangChain, OpenAI API, ChromaDB, Python.</div>
-  <div><span class="highlight">Enlace:</span> <a href="https://github.com/samuel-rdm/doc-assistant-bot" target="_blank">github.com/samuel-rdm/doc-assistant-bot</a></div>
+  <span class="highlight">Chatbot Dialogflow</span>
+  <div><span class="highlight">Descripción:</span> Un agente conversacional creado con Google Dialogflow ES. El bot está diseñado para simular conversaciones humanas y realizar tareas específicas de manera automatizada.El objetivo principal de este agente es ofrecer informacion general a los clientes sobre productos y citas del centro auditivo.</div>
+  <div><span class="highlight">Tecnologías:</span>Dialogflow, Google Cloud.</div>
+  <div><span class="highlight">Enlace:</span> <a href="https://srdemora.github.io/Chat/" target="_blank">github.com/SRdeMora/Chat_Dialogflow</a></div>
 </div>
 
 <div class="project-item">
-  <span class="highlight">Extractor y Resumidor de Noticias</span>
-  <div><span class="highlight">Descripción:</span> Un script automatizado que extrae el contenido de artículos de noticias a partir de una URL y genera un resumen conciso de 3-4 frases.</div>
-  <div><span class="highlight">Tecnologías:</span> spaCy, Gensim, BeautifulSoup, Python.</div>
-  <div><span class="highlight">Enlace:</span> <a href="https://github.com/samuel-rdm/news-summarizer" target="_blank">github.com/samuel-rdm/news-summarizer</a></div>
+  <span class="highlight">NESY Medical Bot</span>
+  <div><span class="highlight">Descripción:</span> Nesy es un bot de Telegram diseñado para gestionar citas médicas y medicamentos de manera eficiente. Nesy, puede añadir, consultar, modificar y eliminar citas, así como llevar un registro detallado de los medicamentos y tratamientos. Además, permite la consulta de información detallada de medicamentos extraida de la AEMPS (Agencia Española de Medicamentos y Productos Sanitarios).</div>
+  <div><span class="highlight">Tecnologías:</span> Python, Telegram, Flask, Firestore, API Integration.</div>
+  <div><span class="highlight">Enlace:</span> <a href="https://github.com/SRdeMora/Nesy_Medical_Bot" target="_blank">github.com/SRdeMora/Nesy_Medical_Bot</a></div>
 </div>
 `,
     'contact': `
@@ -53,9 +54,8 @@ Lingüista Computacional con base en Filología Hispánica, experto en PLN, Mach
 
 <div class="contact-item"><span class="highlight">Email:</span> <a href="mailto:devai.srm@gmail.com" style="color: white;">devai.srm@gmail.com</a></div>
 <div class="contact-item"><span class="highlight">Móvil:</span> <span style="color: white;">629 308 432</span></div>
-<div class="contact-item"><span class="highlight">LinkedIn:</span> <a href="URL_DE_TU_LINKEDIN" target="_blank" style="color: white;">LinkedIn</a></div>
-<div class="contact-item"><span class="highlight">GitHub:</span> <a href="URL_DE_TU_GITHUB" target="_blank" style="color: white;">GitHub</a></div>
-<div class="contact-item"><span class="highlight">Portfolio:</span> <a href="URL_DE_TU_LANDING_PAGE" target="_blank" style="color: white;">Portfolio</a></div>
+<div class="contact-item"><span class="highlight">LinkedIn:</span> <a href="https://www.linkedin.com/in/samuel-rodriguez-de-mora-328547387/" target="_blank" style="color: white;">LinkedIn</a></div>
+<div class="contact-item"><span class="highlight">GitHub:</span> <a href="https://github.com/SRdeMora" target="_blank" style="color: white;">GitHub</a></div>
 `
 };
 
