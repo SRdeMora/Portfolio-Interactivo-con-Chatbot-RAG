@@ -1,0 +1,198 @@
+:root {
+    --background-color: #0a0a0a;
+    --primary-text-color: #EAEAEA;
+    --secondary-text-color: #B3B3B3;
+    --accent-color: #8A2BE2; /* A nice violet */
+    --accent-color-dark: #4B0082; /* Indigo */
+    --surface-color: #121212;
+    --error-color: #CF6679;
+    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: 'Fira Code', 'Courier New', Courier, monospace;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    font-family: var(--font-main);
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* Background Animation */
+#background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: var(--background-color);
+    overflow: hidden;
+}
+
+#background-animation::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: radial-gradient(circle, rgba(138, 43, 226, 0.1) 0%, rgba(138, 43, 226, 0) 60%);
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+#main-header {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+#main-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+}
+
+#main-header p {
+    font-size: 1.2rem;
+    color: var(--secondary-text-color);
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background-color: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar span {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar span:hover, #navbar span.active {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+#content-area {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#content-wrapper {
+    background-color: var(--surface-color);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* To keep the border radius on children */
+}
+
+#output {
+    padding: 30px;
+    min-height: 400px;
+}
+
+#chat-input-container {
+    display: none; /* Hidden by default */
+    padding: 15px 30px;
+    background-color: rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    margin-right: 15px;
+    color: var(--accent-color);
+    font-weight: 700;
+    font-family: var(--font-mono);
+}
+
+#input {
+    background: transparent;
+    border: none;
+    color: var(--primary-text-color);
+    font-family: var(--font-main);
+    font-size: 1rem;
+    width: 100%;
+    outline: none;
+}
+
+.command-output {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    font-family: var(--font-mono);
+}
+
+.error {
+    color: var(--error-color);
+}
+
+.highlight {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--accent-color);
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+a:hover {
+    color: var(--primary-text-color);
+    border-bottom: 1px solid var(--primary-text-color);
+}
+
+.project-item {
+    margin-bottom: 25px;
+}
+
+.project-item div {
+    margin-left: 20px;
+}
+
+.contact-item {
+    margin-bottom: 10px;
+}
+
+.skill-category {
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent-color);
+    text-align: center;
+}
