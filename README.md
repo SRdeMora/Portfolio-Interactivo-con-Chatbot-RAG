@@ -7,7 +7,7 @@
     Portfolio Interactivo con Chatbot RAG
   </h1>
   <p align="center">
-    <strong>Una landing page personal con interfaz de terminal retro y un chatbot RAG para responder preguntas sobre mi perfil profesional.</strong>
+    <strong>Una landing page personal con un chatbot RAG para responder preguntas sobre mi perfil profesional.</strong>
   </p>
 </div>
 
