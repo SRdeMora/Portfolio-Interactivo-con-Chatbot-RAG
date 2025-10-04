@@ -26,7 +26,7 @@
 
 ## 📜 Descripción del Proyecto
 
-Este proyecto es un portfolio personal interactivo que simula una **interfaz de terminal retro**. La característica central es un **chatbot avanzado** que utiliza una arquitectura de **Retrieval-Augmented Generation (RAG)** para responder preguntas sobre mi perfil profesional. El bot recupera información de una base de conocimiento local, mantiene el contexto de la conversación y responde con una personalidad amable y profesional, optimizada para interacciones con personal de Recursos Humanos.
+Este proyecto es un portfolio personal interactivo. La característica central es un **chatbot avanzado** que utiliza una arquitectura de **Retrieval-Augmented Generation (RAG)** para responder preguntas sobre mi perfil profesional. El bot recupera información de una base de conocimiento local, mantiene el contexto de la conversación y responde con una personalidad amable y profesional, optimizada para interacciones con personal de Recursos Humanos.
 
 ---
 
@@ -37,15 +37,6 @@ Este proyecto es un portfolio personal interactivo que simula una **interfaz de 
 -   🧠 **Orquestación con LangChain:** Utiliza `ConversationalRetrievalChain` para gestionar el flujo completo de la conversación, integrando la recuperación de documentos, la memoria y la generación de respuestas del LLM.
 -   📚 **Ingesta de Conocimiento Local:** Un script (`ingest.py`) procesa un archivo de texto (`knowledge_base.txt`), lo divide en fragmentos, genera embeddings localmente con un modelo de Hugging Face y los almacena en ChromaDB.
 -   🗣️ **Personalidad Definida y Memoria Conversacional:** Gracias a `ConversationBufferMemory` y un prompt personalizado, el bot puede responder a preguntas de seguimiento y mantener un tono coherente durante toda la interacción.
-
-<div align="center">
-  <br/>
-  <!-- AÑADE AQUÍ UN GIF DE DEMOSTRACIÓN DE LA UI -->
-  <img src="URL_DEL_GIF_DE_DEMO.gif" alt="Demo del Portfolio Interactivo en acción"/>
-  <p><em>Demostración de la interfaz de usuario del portfolio.</em></p>
-</div>
-
----
 
 ## 💡 Relevancia y Demostración de Habilidades
 
