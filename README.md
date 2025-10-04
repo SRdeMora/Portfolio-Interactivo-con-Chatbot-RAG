@@ -75,7 +75,7 @@ Este repositorio es un portfolio que demuestra la capacidad de diseñar y constr
 ├── 🎨 style.css             # Estilos de la terminal retro
 ├── 💻 script.js            # Lógica del Frontend y llamadas a la API
 │
-└── 🧠 api/                  # Backend del proyecto (FastAPI)
+└── 🧠 src/                  # Backend del proyecto (FastAPI)
     ├── 🐍 main.py           # API principal que gestiona el chatbot
     ├── 🐍 ingest.py         # Script para crear la base de datos vectorial
     ├── 📝 knowledge_base.txt # El "cerebro" del chatbot
