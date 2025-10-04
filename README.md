@@ -4,10 +4,15 @@
     <path d="M9.4 86.6C-3.1 74.1-3.1 53.9 9.4 41.4s32.8-12.5 45.3 0L177.3 164c4.9 4.9 11.4 7.4 18 7.4s13.1-2.5 18-7.4L335.9 41.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L258.7 209.1c-4.9 4.9-11.4 7.4-18 7.4s-13.1-2.5-18-7.4L9.4 86.6zM566.6 233.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L398.7 209.1c-4.9 4.9-11.4 7.4-18 7.4s-13.1-2.5-18-7.4L239.9 86.6c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L317.3 254.7c4.9 4.9 11.4 7.4 18 7.4s13.1-2.5 18-7.4L566.6 233.4zM576 352c0-17.7-14.3-32-32-32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H544c17.7 0 32-14.3 32-32z"/>
   </svg>
   <h1 align="center">
-    Portfolio Interactivo con Chatbot RAG
+    Portfolio Interactivo con Chatbot RAG   
   </h1>
   <p align="center">
     <strong>Una landing page personal con un chatbot RAG para responder preguntas sobre mi perfil profesional.</strong>
+    <p align="center">
+  <a href="#">
+    <img src="https://img.shields.io/badge/🚀_Accede_Pinchando_Aquí-28A745?style=for-the-badge&logo=rocket&logoColor=white" alt="Acceder a la Demo">
+  </a>
+</p>
   </p>
 </div>
 
