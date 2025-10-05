@@ -115,23 +115,14 @@ body {
 
 #output {
     padding: 30px;
-    
-   
     height: 500px; 
-    
-   
     overflow-y: auto;
-
- 
     display: flex;
     flex-direction: column;
-    
-
     scroll-behavior: smooth; 
 }
 
 #chat-input-container {
-    display: none; /* Hidden by default */
     padding: 15px 30px;
     background-color: rgba(0,0,0,0.2);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -193,6 +184,7 @@ a:hover {
 
 .contact-item {
     margin-bottom: 10px;
+    text-align: center; /* Centra el texto como Email y Móvil */
 }
 
 .skill-category {
@@ -208,3 +200,32 @@ a:hover {
     border-bottom: 2px solid var(--accent-color);
     text-align: center;
 }
+
+/* --- INICIO: CÓDIGO AÑADIDO PARA CONTACTO --- */
+
+/* Contenedor para centrar los iconos */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+    margin-top: 20px;
+}
+
+/* Estilos para los iconos */
+.contact-icons a {
+    border-bottom: none; 
+}
+
+.contact-icons a i {
+    font-size: 2.5rem; 
+    color: var(--primary-text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el ratón */
+.contact-icons a:hover i {
+    transform: scale(1.2) translateY(-5px); 
+    color: var(--accent-color);
+}
+
