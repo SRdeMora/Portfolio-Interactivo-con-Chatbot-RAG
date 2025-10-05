@@ -39,7 +39,7 @@ Soy experto en el ciclo de vida completo de proyectos de IA conversacional: desd
   <span class="highlight">ML_Pipeline-NLP-End-to-End</span>
   <div><span class="highlight">Descripción:</span> Un proyecto NLP de extremo a extremo para extraer y clasificar la opinión pública sobre la película Gladiator 2, utilizando un corpus sintético y modelos de Machine Learning.</div>
   <div><span class="highlight">Tecnologías:</span>Python, spaCy, scikit-learn, NLTK, Matplotlib.</div>
-  <div><span class="highlight">Enlace:</span> <a href="https://github.com/SRdeMora/ML_Pipeline-NLP-End-to-End" target="_blank">github.com/SRdeMora/Chat_Dialogflow</a></div>
+  <div><span class="highlight">Enlace:</span> <a href="https://github.com/SRdeMora/ML_Pipeline-NLP-End-to-End" target="_blank">https://github.com/SRdeMora/ML_Pipeline-NLP-End-to-End</a></div>
 </div>
 
 <div class="project-item">
