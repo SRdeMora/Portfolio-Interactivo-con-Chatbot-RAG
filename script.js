@@ -39,7 +39,7 @@ Soy experto en el ciclo de vida completo de proyectos de IA conversacional: desd
   <span class="highlight">Chatbot Dialogflow</span>
   <div><span class="highlight">Descripción:</span> Un agente conversacional creado con Google Dialogflow ES. El bot está diseñado para simular conversaciones humanas y realizar tareas específicas de manera automatizada.El objetivo principal de este agente es ofrecer informacion general a los clientes sobre productos y citas del centro auditivo.</div>
   <div><span class="highlight">Tecnologías:</span>Dialogflow, Google Cloud.</div>
-  <div><span class="highlight">Enlace:</span> <a href="https://srdemora.github.io/Chat/" target="_blank">github.com/SRdeMora/Chat_Dialogflow</a></div>
+  <div><span class="highlight">Enlace:</span> <a href="https://srdemora.github.io/Chatbot_Dialogflow/" target="_blank">github.com/SRdeMora/Chat_Dialogflow</a></div>
 </div>
 
 <div class="project-item">
