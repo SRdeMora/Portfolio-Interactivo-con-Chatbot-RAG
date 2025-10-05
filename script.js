@@ -59,6 +59,12 @@ Soy experto en el ciclo de vida completo de proyectos de IA conversacional: desd
 `
 };
 
+// --- FUNCIÓN AÑADIDA ---
+// Pequeña función de ayuda para mantener el código limpio y asegurar el scroll.
+function scrollToBottom() {
+    output.scrollTop = output.scrollHeight;
+}
+
 function showSection(section) {
     // Update active class on navbar
     document.querySelectorAll('#navbar span').forEach(item => {
@@ -82,6 +88,9 @@ function showSection(section) {
         }
         chatInputContainer.style.display = 'none';
     }
+    // --- LLAMADA AÑADIDA ---
+    // Nos aseguramos de que el scroll esté abajo al cambiar de sección.
+    scrollToBottom();
 }
 
 document.addEventListener('keydown', (e) => {
@@ -106,6 +115,10 @@ input.addEventListener('keydown', async (e) => {
     commandLine.innerHTML = `<div class="command-output"><span class="prompt">YOU> </span><span>${command}</span></div>`;
     output.appendChild(commandLine);
     
+    // --- LLAMADA AÑADIDA ---
+    // Hacemos scroll inmediatamente después de que el usuario envíe su mensaje.
+    scrollToBottom();
+    
     input.value = '';
 
     if (command.toLowerCase() === 'exit') {
@@ -116,7 +129,6 @@ input.addEventListener('keydown', async (e) => {
     commandHistory.unshift(command);
     historyIndex = -1;
     await handleChatMessage(command);
-    output.scrollTop = output.scrollHeight;
 });
 
 async function handleChatMessage(message) {
@@ -124,7 +136,10 @@ async function handleChatMessage(message) {
     thinkingElem.classList.add('command-output');
     thinkingElem.textContent = 'SAM-AI is thinking...';
     output.appendChild(thinkingElem);
-    output.scrollTop = output.scrollHeight;
+    
+    // --- CÓDIGO MODIFICADO ---
+    // Hacemos scroll cuando aparece el mensaje "pensando...".
+    scrollToBottom();
 
     try {
         const response = await fetch('https://api.srmdevai.com/chat', {
@@ -155,7 +170,10 @@ async function handleChatMessage(message) {
         errorElem.textContent = `Error: Could not connect to SAM-AI. Make sure the backend server is running. Details: ${error.message}`;
         output.appendChild(errorElem);
     }
-    output.scrollTop = output.scrollHeight;
+    
+    // --- CÓDIGO MODIFICADO ---
+    // Hacemos scroll una última vez cuando llega la respuesta final o el error.
+    scrollToBottom();
 }
 
 // Add click listeners to navbar
