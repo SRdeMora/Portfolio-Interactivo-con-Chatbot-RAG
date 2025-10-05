@@ -116,17 +116,17 @@ body {
 #output {
     padding: 30px;
     
-    /* Altura fija para el contenedor del chat. Ajústala a tu gusto. */
+   
     height: 500px; 
     
-    /* Añade la barra de scroll vertical cuando el contenido se desborde. */
+   
     overflow-y: auto;
 
-    /* Ayuda a que los mensajes se apilen correctamente. */
+ 
     display: flex;
     flex-direction: column;
     
-    /* Hace que el scroll automático sea más suave y profesional. */
+
     scroll-behavior: smooth; 
 }
 
