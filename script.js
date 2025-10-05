@@ -89,7 +89,7 @@ function showSection(section) {
     output.innerHTML = ''; // Clear previous output
 
     if (section === 'chatbot') {
-        output.innerHTML = '<div class="command-output">Asistente de IA diseñado para responder preguntas sobre Samuel. Escribe <span class="highlight">exit</span> para salir.</div>';
+        output.innerHTML = '<div class="command-output">Chatbot con arquitectura RAG que responde preguntas sobre mi perfil. Escribe <span class="highlight">exit</span> para salir.</div>';
         chatInputContainer.style.display = 'flex';
         input.focus();
     } else {
