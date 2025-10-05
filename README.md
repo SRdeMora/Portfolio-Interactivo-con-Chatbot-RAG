@@ -9,7 +9,7 @@
   <p align="center">
     <strong>Una landing page personal con un chatbot RAG para responder preguntas sobre mi perfil profesional.</strong>
     <p align="center">
-  <a href="https://srdemora.github.io/Portafolio/">
+  <a href="https://srdemora.github.io/Portfolio-Interactivo-con-Chatbot-RAG/">
     <img src="https://img.shields.io/badge/🚀_Accede_Pinchando_Aquí-28A745?style=for-the-badge&logo=rocket&logoColor=white" alt="Acceder a la Demo">
   </a>
 </p>
