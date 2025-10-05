@@ -78,7 +78,7 @@ function showSection(section) {
     output.innerHTML = ''; // Clear previous output
 
     if (section === 'chatbot') {
-        output.innerHTML = '<div class="command-output">Switched to AI assistant mode. Type your questions or type <span class="highlight">exit</span> to leave.</div>';
+        output.innerHTML = '<div class="command-output">Asistente de  IA dieñado para responder preguntas sobre Samuel. Escribe<span class="highlight">exit</span> to leave.</div>';
         chatInputContainer.style.display = 'flex';
         input.focus();
     } else {
