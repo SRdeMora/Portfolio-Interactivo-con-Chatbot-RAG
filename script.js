@@ -56,17 +56,21 @@ Soy experto en el ciclo de vida completo de proyectos de IA conversacional: desd
   <div><span class="highlight">Enlace:</span> <a href="https://github.com/SRdeMora/Nesy_Medical_Bot" target="_blank">github.com/SRdeMora/Nesy_Medical_Bot</a></div>
 </div>
 `,
+    // --- INICIO: SECCIÓN DE CONTACTO MODIFICADA ---
     'contact': `
 <div class="section-title">--- CONTACTO ---</div>
 
-<div class="contact-item"><span class="highlight">Email:</span> <a href="mailto:devai.srm@gmail.com" style="color: white;">devai.srm@gmail.com</a></div>
-<div class="contact-item"><span class="highlight">Móvil:</span> <span style="color: white;">+34 629 308 432</span></div>
-<div class="contact-item"><span class="highlight">LinkedIn:</span> <a href="https://www.linkedin.com/in/samuel-rodriguez-de-mora-328547387/" target="_blank" style="color: white;">LinkedIn</a></div>
-<div class="contact-item"><span class="highlight">GitHub:</span> <a href="https://github.com/SRdeMora" target="_blank" style="color: white;">GitHub</a></div>
+<div class="contact-item"><span class="highlight">Email:</span> <a href="mailto:devai.srm@gmail.com">devai.srm@gmail.com</a></div>
+<div class="contact-item"><span class="highlight">Móvil:</span> <span>+34 629 308 432</span></div>
+
+<div class="contact-icons">
+    <a href="https://www.linkedin.com/in/samuel-rodriguez-de-mora-328547387/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/SRdeMora" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+</div>
 `
+    // --- FIN: SECCIÓN DE CONTACTO MODIFICADA ---
 };
 
-// --- FUNCIÓN AÑADIDA ---
 // Pequeña función de ayuda para mantener el código limpio y asegurar el scroll.
 function scrollToBottom() {
     output.scrollTop = output.scrollHeight;
@@ -85,7 +89,7 @@ function showSection(section) {
     output.innerHTML = ''; // Clear previous output
 
     if (section === 'chatbot') {
-        output.innerHTML = '<div class="command-output">Asistente de IA dieñado para responder preguntas sobre Samuel. Escribe <span class="highlight">exit</span> to leave.</div>';
+        output.innerHTML = '<div class="command-output">Asistente de IA diseñado para responder preguntas sobre Samuel. Escribe <span class="highlight">exit</span> para salir.</div>';
         chatInputContainer.style.display = 'flex';
         input.focus();
     } else {
@@ -95,7 +99,6 @@ function showSection(section) {
         }
         chatInputContainer.style.display = 'none';
     }
-    // --- LLAMADA AÑADIDA ---
     // Nos aseguramos de que el scroll esté abajo al cambiar de sección.
     scrollToBottom();
 }
@@ -122,7 +125,6 @@ input.addEventListener('keydown', async (e) => {
     commandLine.innerHTML = `<div class="command-output"><span class="prompt">YOU> </span><span>${command}</span></div>`;
     output.appendChild(commandLine);
     
-    // --- LLAMADA AÑADIDA ---
     // Hacemos scroll inmediatamente después de que el usuario envíe su mensaje.
     scrollToBottom();
     
@@ -144,7 +146,6 @@ async function handleChatMessage(message) {
     thinkingElem.textContent = 'SAM-AI is thinking...';
     output.appendChild(thinkingElem);
     
-    // --- CÓDIGO MODIFICADO ---
     // Hacemos scroll cuando aparece el mensaje "pensando...".
     scrollToBottom();
 
@@ -178,7 +179,6 @@ async function handleChatMessage(message) {
         output.appendChild(errorElem);
     }
     
-    // --- CÓDIGO MODIFICADO ---
     // Hacemos scroll una última vez cuando llega la respuesta final o el error.
     scrollToBottom();
 }
