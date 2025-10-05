@@ -5,9 +5,6 @@ const chatInputContainer = document.getElementById('chat-input-container');
 let commandHistory = [];
 let historyIndex = -1;
 
-// URL base de la API. Cambia esto si tu API está en otro lugar.
-const API_BASE_URL = 'https://api.srmdevai.com';
-
 const sections = {
     'about': `
 <div class="section-title">--- BIOGRAFÍA ---</div>
@@ -59,6 +56,7 @@ Soy experto en el ciclo de vida completo de proyectos de IA conversacional: desd
   <div><span class="highlight">Enlace:</span> <a href="https://github.com/SRdeMora/Nesy_Medical_Bot" target="_blank">github.com/SRdeMora/Nesy_Medical_Bot</a></div>
 </div>
 `,
+    // --- INICIO: SECCIÓN DE CONTACTO MODIFICADA ---
     'contact': `
 <div class="section-title">--- CONTACTO ---</div>
 
@@ -70,52 +68,30 @@ Soy experto en el ciclo de vida completo de proyectos de IA conversacional: desd
     <a href="https://github.com/SRdeMora" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
 </div>
 `
+    // --- FIN: SECCIÓN DE CONTACTO MODIFICADA ---
 };
 
-// Función de ayuda para hacer scroll al final
+// Pequeña función de ayuda para mantener el código limpio y asegurar el scroll.
 function scrollToBottom() {
     output.scrollTop = output.scrollHeight;
 }
 
-// Función para inicializar el chat
-async function initializeChat() {
-    output.innerHTML = `<div class="command-output">Conectando con SAM-AI...</div>`;
-    scrollToBottom();
-
-    try {
-        const response = await fetch(`${API_BASE_URL}/reset`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-        });
-
-        if (!response.ok) {
-            throw new Error('La respuesta del servidor no fue exitosa.');
-        }
-
-        const data = await response.json();
-        output.innerHTML = `<div class="command-output">${data.answer}</div>`;
-        output.innerHTML += `<div class="command-output">Escribe <span class="highlight">exit</span> para salir.</div>`;
-    } catch (error) {
-        console.error('Error al inicializar el chat:', error);
-        output.innerHTML = `<div class="command-output error">Error al conectar con SAM-AI. Asegúrate de que el servidor esté funcionando.</div>`;
-    } finally {
-        scrollToBottom();
-    }
-}
-
-// Función principal para mostrar secciones
 function showSection(section) {
-    // Actualizar clase activa en la barra de navegación
+    // Update active class on navbar
     document.querySelectorAll('#navbar span').forEach(item => {
-        item.classList.toggle('active', item.dataset.section === section);
+        if (item.dataset.section === section) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
     });
 
-    output.innerHTML = ''; // Limpiar salida anterior
+    output.innerHTML = ''; // Clear previous output
 
     if (section === 'chatbot') {
+        output.innerHTML = '<div class="command-output">Asistente de IA diseñado para responder preguntas sobre Samuel. Escribe <span class="highlight">exit</span> para salir.</div>';
         chatInputContainer.style.display = 'flex';
         input.focus();
-        initializeChat(); // Llama a la función para iniciar y resetear el chat
     } else {
         const content = sections[section];
         if (content) {
@@ -123,12 +99,13 @@ function showSection(section) {
         }
         chatInputContainer.style.display = 'none';
     }
+    // Nos aseguramos de que el scroll esté abajo al cambiar de sección.
     scrollToBottom();
 }
 
-// Event listener para atajos de teclado
 document.addEventListener('keydown', (e) => {
     if (input === document.activeElement) return;
+
     switch (e.key) {
         case '1': showSection('about'); break;
         case '2': showSection('skills'); break;
@@ -138,7 +115,6 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Event listener para el input del chat
 input.addEventListener('keydown', async (e) => {
     if (e.key !== 'Enter') return;
 
@@ -149,12 +125,13 @@ input.addEventListener('keydown', async (e) => {
     commandLine.innerHTML = `<div class="command-output"><span class="prompt">YOU> </span><span>${command}</span></div>`;
     output.appendChild(commandLine);
     
+    // Hacemos scroll inmediatamente después de que el usuario envíe su mensaje.
     scrollToBottom();
     
     input.value = '';
 
     if (command.toLowerCase() === 'exit') {
-        showSection('about');
+        showSection('about'); // Go back to about section
         return;
     }
 
@@ -163,17 +140,17 @@ input.addEventListener('keydown', async (e) => {
     await handleChatMessage(command);
 });
 
-// Función para manejar los mensajes del chat
 async function handleChatMessage(message) {
     const thinkingElem = document.createElement('div');
     thinkingElem.classList.add('command-output');
-    thinkingElem.textContent = 'SAM-AI está pensando...';
+    thinkingElem.textContent = 'SAM-AI is thinking...';
     output.appendChild(thinkingElem);
     
+    // Hacemos scroll cuando aparece el mensaje "pensando...".
     scrollToBottom();
 
     try {
-        const response = await fetch(`${API_BASE_URL}/chat`, {
+        const response = await fetch('https://api.srmdevai.com/chat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ question: message }),
@@ -182,8 +159,8 @@ async function handleChatMessage(message) {
         output.removeChild(thinkingElem);
 
         if (!response.ok) {
-            const errorData = await response.json().catch(() => ({ detail: 'Respuesta de error no válida.' }));
-            throw new Error(errorData.detail || 'La petición a la API falló');
+            const errorData = await response.json();
+            throw new Error(errorData.detail || 'API request failed');
         }
 
         const data = await response.json();
@@ -198,19 +175,20 @@ async function handleChatMessage(message) {
         }
         const errorElem = document.createElement('div');
         errorElem.classList.add('command-output', 'error');
-        errorElem.textContent = `Error: No se pudo conectar con SAM-AI. Detalles: ${error.message}`;
+        errorElem.textContent = `Error: Could not connect to SAM-AI. Make sure the backend server is running. Details: ${error.message}`;
         output.appendChild(errorElem);
     }
     
+    // Hacemos scroll una última vez cuando llega la respuesta final o el error.
     scrollToBottom();
 }
 
-// Event listener para cargar el contenido inicial
+// Add click listeners to navbar
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('#navbar span').forEach(item => {
         item.addEventListener('click', () => showSection(item.dataset.section));
     });
 
-    // Muestra la sección 'about' por defecto al cargar la página
+    // Show 'about' section by default
     showSection('about');
 });
