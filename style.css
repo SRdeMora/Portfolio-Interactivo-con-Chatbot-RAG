@@ -20,7 +20,7 @@ body {
     background-color: var(--background-color);
     color: var(--primary-text-color);
     font-family: var(--font-main);
-    font-size: 16px;
+    font-size: 1.1rem; /* CAMBIO: Aumentado de 16px para mejor legibilidad (aprox 17.6px) */
     line-height: 1.7;
     overflow-x: hidden;
 }
@@ -59,14 +59,14 @@ body {
 }
 
 #main-header h1 {
-    font-size: 3rem;
+    font-size: 3.2rem; /* CAMBIO: Ligeramente aumentado para mantener proporción */
     font-weight: 700;
     color: var(--primary-text-color);
     margin-bottom: 10px;
 }
 
 #main-header p {
-    font-size: 1.2rem;
+    font-size: 1.3rem; /* CAMBIO: Ligeramente aumentado para mantener proporción */
     color: var(--secondary-text-color);
 }
 
@@ -88,7 +88,7 @@ body {
     padding: 10px 20px;
     margin: 0 10px;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 1.1rem; /* CAMBIO: Aumentado para coincidir con el cuerpo */
     font-weight: 500;
     color: var(--secondary-text-color);
     transition: background-color 0.3s, color 0.3s;
@@ -110,7 +110,7 @@ body {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    overflow: hidden; /* To keep the border radius on children */
+    overflow: hidden;
 }
 
 #output {
@@ -142,7 +142,7 @@ body {
     border: none;
     color: var(--primary-text-color);
     font-family: var(--font-main);
-    font-size: 1rem;
+    font-size: 1.1rem; /* CAMBIO: Aumentado para coincidir con el cuerpo */
     width: 100%;
     outline: none;
 }
@@ -151,6 +151,7 @@ body {
     margin-bottom: 15px;
     line-height: 1.7;
     font-family: var(--font-mono);
+    font-size: 1.05rem; /* CAMBIO: Aumentado para que el texto de la terminal sea más legible */
 }
 
 .error {
@@ -184,7 +185,7 @@ a:hover {
 
 .contact-item {
     margin-bottom: 10px;
-    text-align: center; /* Centra el texto como Email y Móvil */
+    text-align: center;
 }
 
 .skill-category {
@@ -192,7 +193,7 @@ a:hover {
 }
 
 .section-title {
-    font-size: 1.8rem;
+    font-size: 2rem; /* CAMBIO: Aumentado para mantener jerarquía */
     font-weight: 700;
     color: var(--accent-color);
     margin-bottom: 25px;
@@ -203,29 +204,27 @@ a:hover {
 
 /* --- INICIO: CÓDIGO AÑADIDO PARA CONTACTO --- */
 
-/* Contenedor para centrar los iconos */
 .contact-icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px; 
+    gap: 30px;
     margin-top: 20px;
 }
 
-/* Estilos para los iconos */
 .contact-icons a {
-    border-bottom: none; 
+    border-bottom: none;
 }
 
 .contact-icons a i {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     color: var(--primary-text-color);
     transition: all 0.3s ease-in-out;
 }
 
-/* Efecto al pasar el ratón */
 .contact-icons a:hover i {
-    transform: scale(1.2) translateY(-5px); 
+    transform: scale(1.2) translateY(-5px);
     color: var(--accent-color);
 }
 
+/* --- FIN: CÓDIGO AÑADIDO PARA CONTACTO --- */
