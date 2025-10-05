@@ -53,7 +53,7 @@ Soy experto en el ciclo de vida completo de proyectos de IA conversacional: desd
 <div class="section-title">--- CONTACTO ---</div>
 
 <div class="contact-item"><span class="highlight">Email:</span> <a href="mailto:devai.srm@gmail.com" style="color: white;">devai.srm@gmail.com</a></div>
-<div class="contact-item"><span class="highlight">Móvil:</span> <span style="color: white;">629 308 432</span></div>
+<div class="contact-item"><span class="highlight">Móvil:</span> <span style="color: white;">+34 629 308 432</span></div>
 <div class="contact-item"><span class="highlight">LinkedIn:</span> <a href="https://www.linkedin.com/in/samuel-rodriguez-de-mora-328547387/" target="_blank" style="color: white;">LinkedIn</a></div>
 <div class="contact-item"><span class="highlight">GitHub:</span> <a href="https://github.com/SRdeMora" target="_blank" style="color: white;">GitHub</a></div>
 `
