@@ -32,7 +32,14 @@ Soy experto en el ciclo de vida completo de proyectos de IA conversacional: desd
   <span class="highlight">Chimera-Conversational-AI</span>
   <div><span class="highlight">Descripción:</span> El Proyecto Quimera es un asistente de IA diseñado para funcionar como un "exo-córtex": un cerebro externo que aumenta las capacidades del usuario ("Arkitekto"). A diferencia de los chatbots simples, Quimera está diseñado para comprender el contexto profundo (tono, emoción, intención) y utilizar un sistema de memoria complejo para mantener conversaciones coherentes, personalizadas y extensibles a largo plazo.</div>
   <div><span class="highlight">Tecnologías:</span>Python, FastAPI, PySide6, Redis, SQLite, ChromaDB, Neo4j, OpenAI, Google Gemini.</div>
-  <div><span class="highlight">Enlace:</span> <a href="https://github.com/SRdeMora/chimera-conversational-ai" target="_blank">github.com/SRdeMora/chimera-conversational-ai</a></div>
+  <div><span class="highlight">Enlace:</span> <a href="https://github.com/SRdeMora/Proyecto-Quimera-Exo-Cortex-Conversacional" target="_blank">github.com/SRdeMora/chimera-conversational-ai</a></div>
+</div>
+
+<div class="project-item">
+  <span class="highlight">ML_Pipeline-NLP-End-to-End</span>
+  <div><span class="highlight">Descripción:</span> Un proyecto NLP de extremo a extremo para extraer y clasificar la opinión pública sobre la película Gladiator 2, utilizando un corpus sintético y modelos de Machine Learning.</div>
+  <div><span class="highlight">Tecnologías:</span>Python, spaCy, scikit-learn, NLTK, Matplotlib.</div>
+  <div><span class="highlight">Enlace:</span> <a href="https://github.com/SRdeMora/ML_Pipeline-NLP-End-to-End" target="_blank">github.com/SRdeMora/Chat_Dialogflow</a></div>
 </div>
 
 <div class="project-item">
